@@ -76,15 +76,16 @@ Test all funcionalities bove in both sides Fronte end and API via GIU graphic us
     gui_commands has all customized commands
     This file receives a function that has 2 paramsn, a name and a callback function
 
-install cypress xpath
+install cypress xpath in dev mode
 
-> npm install -D @cypress/xpath
+> npm install -D cypress-xpath
 
 run specific spec
 
 > npx cypress run --spec cypress/e2e/gui/login.cy.js
 > npx cypress run --spec --browser chrome cypress/e2e/gui/login.cy.js
+> npx cypress run --spec cypress/e2e/gui/createProject.cy.js
 
-open cypress locally
+open cypress app locally in interative mode
 
 > npx cypress open

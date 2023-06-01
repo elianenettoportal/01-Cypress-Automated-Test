@@ -1,14 +1,16 @@
 describe('Tool Admin', () => {
-    // the pre condition is: need to be loged and need to be in the dashboard
+    // Pre condition is: need to be loged and need to be in the dashboard
     beforeEach(()=>{
       cy.login();
       cy.visit('/');
     });
 
     it('Successfully', () => {
-      cy.selecttool();
+      // ACTION
+      cy.gui_selecttool_admin();
   
+      // Results after action Expected to be ..
       cy.contains('Welcome back');
-    })
-  
-  })
+    });
+    
+  });
