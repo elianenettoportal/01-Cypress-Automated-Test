@@ -32,19 +32,20 @@ To test all funcionalities above in both sides of the application, Fronte end an
 4. Configure the cypres config file in package json
    "main": "cypress.config.js",
 5. Configure Cypress for your test
-   > npx cypress open
-   > When your local cypress is opened
-   > a) Continue
-   > b) If in windows, allow it to cross the firewal
-   > c) E2E End to End Testing
-   > d) Cypress added files, just click Continue
-   > e) Select your browser - Chrome v113
-   > f) Click Start
-   > e) The local cypress application has been configured
-   > f) Create your first spec- Select Create new empty spec
-   > g) Rename the first spec to login cypress\e2e\login.cy.js
-   > h) Click Okay, run the spec
-   > i) After the test run see that it passed. If passed you can close, configuration is done
+   > npx cypress open<br>
+   > When your local cypress is opened<br>
+   > a) Continue<br>
+   > b) If in windows, allow it to cross the firewal<br>
+   > c) E2E End to End Testing<br>
+   > d) Cypress added files, just click Continue<br>
+   > e) Select your browser - Chrome v113<br>
+   > f) Click Start<br>
+   > e) The local cypress application has been configured<br>
+   > f) Create your first spec- Select Create new empty spec<br>
+   > g) Rename the first spec to login cypress\e2e\login.cy.js<br>
+   > h) Click Okay, run the spec<br>
+   > i) After the test run see that it passed. If passed you can close, configuration is done<br>
+   <br>
 6. Close your cypress browser
 7. Configure the project automated test
    a) Open the file cypress.confg.js that was automaticaly created
