@@ -15,6 +15,7 @@ Cypress.Commands.add('login', (
 )=>{
     const login =()=>{
         cy.visit('/');
+
         cy.get('input[name="email"]').type(user);
         cy.get('input[id="password"]').type(password, {log:false});
         cy.get('[type="submit"]').click();
@@ -26,11 +27,11 @@ Cypress.Commands.add('login', (
      * */
     const validate = ()=>{
         cy.visit('/');
-        cy.contains('Sign In');
+        cy.get('html').should('not.contain', 'Sign In')
     }
     const options ={
-        cacheSession: true,
-        validate
+        cacheAcrossSpecs: true,
+        validate,
     }
     if(cacheSession){
         cy.session(user, login, options);

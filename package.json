@@ -4,7 +4,8 @@
   "description": "Cypress project to automated tests in GitLab api",
   "main": "cypress.config.js",
   "scripts": {
-    "test": "cypress run --browser chrome"
+    "test": "cypress run --browser chrome",
+    "cy.open": "cypress open"
   },
   "repository": {
     "type": "git",

@@ -78,12 +78,49 @@ install cypress xpath in dev mode
 
 run specific spec
 
-> npx cypress run --spec cypress/e2e/gui/login.cy.js
-> npx cypress run --spec --browser chrome cypress/e2e/gui/login.cy.js
-> npx cypress run --spec cypress/e2e/gui/createProject.cy.js
+> npx cypress run --browser chrome --spec cypress/e2e/gui/login.cy.js
+> npx cypress run --browser chrome --spec cypress/e2e/gui/createProject.cy.js
+> npx cypress run --spec cypress/e2e/cli/gitClone.cy.js
 
 open cypress app locally in interative mode
 
 Run/Open Cypress Locally
 
 > npx cypress open
+
+## Visual Feedback for API tests
+
+This visual feedback makes easy to test API. Makes sensitie information hidden, for instance a access token.
+
+## Visual Feedback for GUI with API
+
+The lib cypress-plugin-api makes possible API tests with GUI tests.
+
+## How to execute command line in system level
+
+https://docs.cypress.io/api/commands/exec
+Use the functionality cy.exec() to execute command line. For instance a git clone via SSH
+
+## How to execute all tests at once
+
+We can execute all tests in headless mode with a npm script
+Add a run script in package.json
+
+> npm test
+
+## Execute iterative tests
+
+We can execute all tests in a iterative mode also using a npm script in package.json to open Cypress App
+
+"scripts": {
+"cy:open": "cypress open",
+"test": "cypress run"
+},
+
+## New Funcionality
+
+Cypress re-launched (experimental) https://docs.cypress.io/guides/references/changelog#11-2-0
+Configurando o Cypress para rodar todos os testes em modo interativo
+It opens the browser only once to execute all tests.
+
+https://talkingabouttesting.com/category/cypress/
