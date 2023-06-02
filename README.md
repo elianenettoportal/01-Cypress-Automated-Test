@@ -3,9 +3,7 @@
 - Login<br>
 - Logout<br>
 - Create a new project<br>
-- Create a new issue<br>
-- Add a label to a issue<br>
-- Add a milestone to a issue<br>
+- Create a new user using API<br>
 - git clone<br>
 
 ### My goal
