@@ -10,28 +10,24 @@
 
 To test all functionalities above in both sides of the application, Front end and API through GIU-graphic user interface - and test the git clone by CLI
 
-1. Create Repository
-   create the package in your local environment
-   add git remore repository
+1. Create Repository package and add git remore repository<br>
 
-   > git remote add origin <link of github created>
-   > git branch -M main
-   > init a npm project
+   > git remote add origin <link of github created><br>
+   > git branch -M main<br>
 
-2. Create the npm Project
+2. Create the npm Project and Install Cypress and libs
 
-   > npm init
-   > install Cypress and libs
-   > npm i @faker-js/faker@7.6.0 cypress@12.0.2 cypress-plugin-api@2.6.1 -D
+   > npm init<br>
+   > npm i @faker-js/faker@7.6.0 cypress@12.0.2 cypress-plugin-api@2.6.1 -D<br>
 
-   - Faker is a random test creator
-   - Cypress plugin ai is used for feedback over API tests
+   - Faker is a random test creator<br>
+   - Cypress plugin is used for feedback over API tests<br>
 
 3. Configure cypress run in package.json
    "test": "cypress run"
    
 4. Configure the cypres config file in package json
-   "main": "cypress.config.js",
+   "main": "cypress.config.js",<br>
    
 5. Configure Cypress for your test
    > npx cypress open<br>
