@@ -1,5 +1,5 @@
 ## Project in Cypress<br>
-
+Personal project<br>
 - Login<br>
 - Logout<br>
 - Create a new project<br>
